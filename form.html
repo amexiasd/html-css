@@ -14,14 +14,45 @@
         <h2>Forms!</h2>
         <form >
             <label for="username">Username:</label>
-            <input type="text" id="username">
+            <input type="text" id="username" required>
             <br><br>
             <label for="email">Enter Email:</label>
             <input type="email" id="email">
             <br><br>
+            
             <label for="passwd">Password:</label>
             <input type="password" id=passwd>
-        </form>
+
+            <p>Please select your age:</p>
+
+            <input type="radio" name = "age" value="0-25" id="option1">
+            <label for="option1">0 - 25</label>
+            <input type="radio" name="age" value="25-35" id="option2">
+            <label for="option2">25 - 35</label>
+            <input type="radio" name="age" value="35+" id="option3">
+            <label for="option3"> 35+</label>
+
+            <br><br>
+            
+            <label for="question">Security Question</label>
+            <select name="question" id = "question">
+                <option value="q1">Dog name</option>
+                <option value="q2">Home Town</option>
+                <option value="q3">Favourite Color</option>
+            </select>
+
+            <br><br>
+
+            <label for="answer">Security Question Answer:</label>
+            <input type="text" id="answer" name="answer">
+
+            <br><br>
+            <label for="bio">Enter Some Bio:</label><br>
+            <textarea name="bio" id="bio" cols="50" rows="5" placeholder="Enter something about you..." ></textarea>
+            
+            <br><br>
+            <input type="submit" value="Submit the form">
+    </form>
        </div>
 
 </body>
