@@ -13,7 +13,7 @@ h2{
 .block{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.2s;
-  border-radius: 10px; /* 5px rounded corners */
+  border-radius: 10px; 
   margin: 10px;
   padding: 10px;
   background-color: bisque;
@@ -25,6 +25,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 80%;
 
 }
 .glass{
@@ -32,7 +33,7 @@ main{
   min-height: 80vh;
   width:60%;
   background: linear-gradient(to right bottom,
-      rgba(255,255,255,0.7),
+        rgba(255,255,255,0.7),
         rgba(255,255,255,0.2));
   border-radius: 2rem;
   display:flex;
@@ -44,12 +45,12 @@ main{
   align-items: center;
  justify-content: space-evenly; 
  background: linear-gradient(to right bottom,
- rgba(255,255,255,0.7),
-   rgba(255,255,255,0.2));
+     rgba(255,255,255,0.7),
+     rgba(255,255,255,0.2));
 border-radius: 2rem;}
 
 .activearea{
-  flex:2;
+  flex:3;
   display:flex;
   flex-direction: column;
   align-items: center;

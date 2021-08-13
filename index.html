@@ -5,11 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./vue.js"></script>
 <link rel="stylesheet" href="./style.css">
 <title>Chapter 1</title>
 </head>
 
 <body>
+	<div id="app">
 <main>
 	<selction class="glass">
 		<div class="dashboard">
@@ -29,12 +31,12 @@
 		<div class="activearea">
 			<div class="orders">
 				<form action="" method="get">
-					<label " for="dog-names">Asset</label>
+					<label  for="dog-names">Asset</label>
 						<select name="dog-names" id="dog-names">
-						<option value="rigatoni">BTC</option>
-						<option value="dave">ETH</option>
-						<option value="pumpernickel">XLM</option>
-						<option value="reeses">DASH</option>
+						<option value="rigatoni">{{coinlist[0]}}</option>
+						<option value="dave">{{coinlist[1]}}</option>
+						<option value="pumpernickel">{{coinlist[2]}}</option>
+						<option value="reeses">{{coinlist[3]}}</option>
 						</select>
 					<div class="inpt">
 						<label class="lbl" for="name">Asset</label>
@@ -49,19 +51,23 @@
 						<input type="text">
 					</div>
 					
-						<label classlbl for="price">Price</label>
-						<input type="text">
-					</div>
-					
-						<label classlbl for="price">Price</label>
-						<input type="text">
-					</div>
 					<input type="button" value="save">
 				</form>
 			</div>
 		</div>
 	</selction>
 </main>
+</div>
+<script>
+	var app = new Vue({
+	  el: "#app",
+	  data: {
+	    message: "Helldddfdfdfdde!",
+	    coinlist:['BTC','ETH','XLM','DASH']
+	  }
+	});
+	
+      </script>
 </body>
 
 </html>

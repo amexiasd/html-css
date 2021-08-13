@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./vue.js"></script>
+  
+  </head>
+  <body>
+    <main>
+    <div id="app">
+      <main>
+        <selction class="glass">
+          <div class="dashboard">
+            <div class="maintitle">
+              <h2>Dashboard</h2>
+            </div>
+            <div class="mainmenu">
+              <h2>Open Orders</h2>
+            </div>
+            <div class="mainmenu">
+              <h2>Calculator</h2>
+            </div>
+            <div class="mainmenu">
+              <h2>Settings</h2>
+            </div>
+          </div>
+          <div class="activearea">
+            <div class="orders">
+              <form action="" method="get">
+                <label for="dog-names">Asset</label>
+                  <select name="dog-names" id="dog-names">
+                  <option value="rigatoni">BTC</option>
+                  <option value="dave">ETH</option>
+                  <option value="pumpernickel">XLM</option>
+                  <option value="reeses">DASH</option>
+                  </select>
+                <div class="inpt">
+                  <label class="lbl" for="name">Asset</label>
+                  <input type="text">
+                </div>
+                <div class="inpt">
+                  <label classlbl for="amount">Amount</label>
+                  <input type="text">
+                </div>
+                <div class="inpt">
+                  <label classlbl for="price">Price</label>
+                  <input type="text">
+                </div>
+                
+                </div>
+                <input type="button" value="save">
+              </form>
+            </div>
+          </div>
+        </selction>
+      </main>
+</div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Helldddfdfdfdde!",
+	  coinlist:['BTC','ETH','XLM']
+        }
+      });
+      
+    </script>
+  </body>
+</html>
